@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 // This step checks out your code from GitHub
-                git  credentialID : 'PATDemo' ,url : 'https://github.com/Keerthana3838/Demo-jenkins.git', branch:'master' // Replace with your GitHub URL
+                git  credentialsID : 'PATDemo' ,url : 'https://github.com/Keerthana3838/Demo-jenkins.git', branch:'master' // Replace with your GitHub URL
             }
         }
 
